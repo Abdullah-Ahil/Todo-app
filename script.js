@@ -26,24 +26,24 @@ btn.addEventListener('click',()=>{
                         </div>
                         `;
         taskList.appendChild(task);
-        saveData(task);
+        // saveData(task);
         // console.log(box)
         task.querySelector('i').addEventListener('click',()=>{
             task.remove();
             alert(" deleting the task ")
         })
     }
-    showData(task.innerHTML)
+    // showData(task.innerHTML)
     title.value =""
     desc.value = ""
 })
 
-function saveData(task){
-    localStorage.setItem('data',task.innerHTML)
-}
-function showData(task){
-    localStorage.getItem(task)
-}
+// function saveData(task){
+//     localStorage.setItem('data',task.innerHTML)
+// }
+// function showData(task){
+//     localStorage.getItem(task)
+// }
 // console.log(task)
 // console.log(btn)
 
